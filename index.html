@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliver Recordon - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brand-background text-brand-text-primary font-sans">
+
+    <!-- Navigation (Optional - for smooth scrolling) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-brand-background bg-opacity-80 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 py-3 flex flex-col sm:flex-row justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-brand-text-primary mb-2 sm:mb-0">Oliver Recordon</a>
+            <div class="space-x-2 sm:space-x-4">
+                <a href="#about" class="text-brand-text-secondary hover:text-brand-accent text-sm sm:text-base">About</a>
+                <a href="#portfolio" class="text-brand-text-secondary hover:text-brand-accent text-sm sm:text-base">Portfolio</a>
+                <a href="#contact" class="text-brand-text-secondary hover:text-brand-accent text-sm sm:text-base">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center relative">
+        <div id="threejs-container" class="absolute top-0 left-0 w-full h-full z-0"></div>
+        <div class="relative z-10 p-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-brand-text-primary">Hi, I'm Oliver Recordon</h1>
+            <p class="text-xl md:text-2xl text-brand-text-secondary mb-2">A Computer Science Engineer.</p>
+            <p class="text-lg md:text-xl text-brand-text-secondary mb-8 max-w-2xl mx-auto">
+                Focused on software development, machine learning, and cybersecurity to build innovative and efficient solutions.
+            </p>
+            <a href="#portfolio" class="bg-brand-accent hover:bg-opacity-80 text-brand-background font-bold py-3 px-6 rounded-xl text-lg transition duration-300">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-brand-background-alt"> <!-- Assuming a slightly different bg for sections or stick to brand-background -->
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-brand-text-primary">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center bg-brand-background p-8 rounded-2xl shadow-xl">
+                <p class="text-lg text-brand-text-secondary mb-8">
+                    Results-oriented Computer Science Engineer with a strong foundation in software development, machine learning, and cybersecurity. Proficient in Python, JavaScript, and popular frameworks like React and TensorFlow. Experienced in building AI models, mobile applications, and web page development. Seeking a challenging role to apply my technical skills and contribute to innovative projects.
+                </p>
+                <!-- <img src="placeholder-headshot.jpg" alt="Oliver Recordon" class="w-48 h-48 rounded-full mx-auto mb-8 shadow-lg border-4 border-brand-accent"> -->
+                <h3 class="text-3xl font-semibold mb-6 text-brand-text-primary">Core Skills</h3>
+                <div class="flex flex-wrap justify-center gap-3 mb-8">
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">Python</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">JavaScript</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">React</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">Next.js</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">Node.js</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">TensorFlow</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">SQL & NoSQL</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">AWS</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">Docker</span>
+                    <span class="bg-brand-accent bg-opacity-20 text-brand-accent px-4 py-2 rounded-xl text-sm">Git & GitHub</span>
+                </div>
+                <h3 class="text-3xl font-semibold mb-6 text-brand-text-primary">Experience</h3>
+                <div class="text-left bg-brand-background-alt p-6 rounded-xl shadow-md">
+                    <h4 class="text-xl font-semibold text-brand-accent">Software Engineer</h4>
+                    <p class="text-brand-text-secondary text-sm mb-1">AMR Films | January 2024 – May 2024</p>
+                    <ul class="list-disc list-inside text-brand-text-secondary space-y-1 text-sm">
+                        <li>Successfully contributed to the development of a new, user-friendly webpage.</li>
+                        <li>Implemented efficient software solutions to streamline workflows and improve productivity.</li>
+                        <li>Gained valuable hands-on experience in web development and process optimization.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Projects Section -->
+    <section id="portfolio" class="py-20 bg-brand-background">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-brand-text-primary">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Mobile Food Ordering App -->
+                <div class="bg-brand-background-alt rounded-2xl shadow-xl p-6 transform hover:scale-105 transition duration-300 border border-transparent hover:border-brand-accent flex flex-col">
+                    <img src="https://via.placeholder.com/400x250/2c2c3e/e0e0e0?text=Mobile+Ordering+App" alt="Mobile Food Ordering App Preview" class="rounded-xl mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-text-primary">Mobile Food Ordering App</h3>
+                    <p class="text-brand-text-secondary text-sm mb-3 flex-grow">Streamlined campus food purchasing for students, significantly reducing wait times via a React Native and PostgreSQL mobile solution.</p>
+                    <p class="text-xs text-brand-accent">Technologies: React Native, PostgreSQL</p>
+                </div>
+                <!-- Project 2: Dental Cavity Detection AI -->
+                <div class="bg-brand-background-alt rounded-2xl shadow-xl p-6 transform hover:scale-105 transition duration-300 border border-transparent hover:border-brand-accent flex flex-col">
+                    <img src="https://via.placeholder.com/400x250/2c2c3e/e0e0e0?text=Dental+AI" alt="Dental Cavity Detection AI Preview" class="rounded-xl mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-text-primary">Dental Cavity Detection AI</h3>
+                    <p class="text-brand-text-secondary text-sm mb-3 flex-grow">Developed a Python and TensorFlow based AI model to assist dentists in identifying dental cavities with 82% accuracy.</p>
+                    <p class="text-xs text-brand-accent">Technologies: Python, TensorFlow</p>
+                </div>
+                <!-- Project 3: Data Metrics Automation -->
+                <div class="bg-brand-background-alt rounded-2xl shadow-xl p-6 transform hover:scale-105 transition duration-300 border border-transparent hover:border-brand-accent flex flex-col">
+                    <img src="https://via.placeholder.com/400x250/2c2c3e/e0e0e0?text=Data+Automation" alt="Data Metrics Automation Preview" class="rounded-xl mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-text-primary">Data Metrics Automation</h3>
+                    <p class="text-brand-text-secondary text-sm mb-3 flex-grow">Automated large-scale data processing and reporting using AWS Step Functions and Metabase, enhancing data analysis efficiency.</p>
+                    <p class="text-xs text-brand-accent">Technologies: AWS Step Functions, Metabase</p>
+                </div>
+                <!-- Project 4: Party Voting App -->
+                <div class="bg-brand-background-alt rounded-2xl shadow-xl p-6 transform hover:scale-105 transition duration-300 border border-transparent hover:border-brand-accent flex flex-col">
+                    <img src="https://via.placeholder.com/400x250/2c2c3e/e0e0e0?text=Party+Voting+App" alt="Party Voting App Preview" class="rounded-xl mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-text-primary">Party Voting App</h3>
+                    <p class="text-brand-text-secondary text-sm mb-3 flex-grow">A web app built with React (Next.js, Tailwind CSS) for collaborative party music selection, boosting user engagement.</p>
+                    <p class="text-xs text-brand-accent">Technologies: React, Next.js, Tailwind CSS</p>
+                </div>
+                <!-- Project 5: Game Strategy Prediction AI -->
+                <div class="bg-brand-background-alt rounded-2xl shadow-xl p-6 transform hover:scale-105 transition duration-300 border border-transparent hover:border-brand-accent flex flex-col">
+                    <img src="https://via.placeholder.com/400x250/2c2c3e/e0e0e0?text=Game+Strategy+AI" alt="Game Strategy Prediction AI Preview" class="rounded-xl mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-text-primary">Game Strategy Prediction AI</h3>
+                    <p class="text-brand-text-secondary text-sm mb-3 flex-grow">An AI model using Python and TensorFlow to predict enemy strategies in video games from historical data, improving in-game performance.</p>
+                    <p class="text-xs text-brand-accent">Technologies: Python, TensorFlow</p>
+                </div>
+                <!-- Project 6: Chess and Connect 4 Game -->
+                <div class="bg-brand-background-alt rounded-2xl shadow-xl p-6 transform hover:scale-105 transition duration-300 border border-transparent hover:border-brand-accent flex flex-col">
+                    <img src="https://via.placeholder.com/400x250/2c2c3e/e0e0e0?text=Online+Games" alt="Chess and Connect 4 Game Preview" class="rounded-xl mb-4 h-48 w-full object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-brand-text-primary">Chess & Connect 4 Online</h3>
+                    <p class="text-brand-text-secondary text-sm mb-3 flex-grow">A multiplayer online game suite (Chess, Connect 4) developed with Python, Pygame, and Sockets for an engaging social experience.</p>
+                    <p class="text-xs text-brand-accent">Technologies: Python, Pygame, Sockets</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-brand-background-alt">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-brand-text-primary">Get in Touch</h2>
+            <div class="max-w-lg mx-auto bg-brand-background p-8 rounded-2xl shadow-xl">
+                <form id="contact-form">
+                    <div class="mb-4">
+                        <label for="name" class="block text-brand-text-secondary mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 bg-brand-background-alt border border-gray-700 rounded-xl focus:ring-brand-accent focus:border-brand-accent text-brand-text-primary">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-brand-text-secondary mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-brand-background-alt border border-gray-700 rounded-xl focus:ring-brand-accent focus:border-brand-accent text-brand-text-primary">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-brand-text-secondary mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 bg-brand-background-alt border border-gray-700 rounded-xl focus:ring-brand-accent focus:border-brand-accent text-brand-text-primary"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand-accent hover:bg-opacity-80 text-brand-background font-bold py-3 px-6 rounded-xl transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+                <div id="form-status" class="mt-4 text-center text-brand-text-secondary"></div>
+                <div class="mt-8 text-center">
+                    <p class="text-brand-text-secondary mb-2">Connect with me:</p>
+                    <div class="flex justify-center space-x-6">
+                        <!-- Placeholder for social media icons -->
+                        <a href="https://github.com/lorecordon" target="_blank" rel="noopener noreferrer" class="text-brand-text-secondary hover:text-brand-accent transition-colors duration-300">GitHub</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-brand-text-secondary hover:text-brand-accent transition-colors duration-300">[LinkedIn Placeholder]</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-brand-text-secondary hover:text-brand-accent transition-colors duration-300">[Dribbble Placeholder]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-8 bg-brand-background">
+        <p class="text-brand-text-secondary text-sm">&copy; 2024 Oliver Recordon. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
